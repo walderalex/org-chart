@@ -1,0 +1,66 @@
+.chart {
+	height: 100%;
+	position: relative;
+}
+
+.chart canvas {
+	width: 100%;
+	height: 100%;
+}
+
+.debug {
+	position: fixed;
+	top: 1rem;
+	right: 1rem;
+	pointer-events: none;
+}
+
+.orgWrapper {
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.le {
+	position: absolute;
+	border: 1px solid;
+	width: 200px;
+	height: 113px;
+	display: grid;
+	place-content: center;
+}
+
+.net {
+	position: absolute;
+	width: 200px;
+	height: 75px;
+	opacity: 0;
+	transition: 0.3s ease;
+	display: grid;
+	justify-content: center;
+}
+
+.net:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.line {
+	background-color: gainsboro;
+	width: 5px;
+	height: 100%;
+	display: grid;
+	place-content: center;
+}
+
+.plus {
+	background-color: white;
+	color: black;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	display: grid;
+	place-content: center;
+	line-height: 1rem;
+	opacity: 1;
+}

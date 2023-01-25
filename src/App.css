@@ -1,0 +1,16 @@
+#app {
+	height: 100%;
+	display: grid;
+	grid-template-rows: auto minmax(0, 1fr);
+}
+
+.scroller {
+	overflow: auto;
+	min-height: 100%;
+}
+
+.scroller .main {
+	min-height: 100%;
+	display: grid;
+	grid-template-rows: minmax(0, 1fr) auto;
+}
